@@ -63,7 +63,7 @@ void loop() {
         Serial.println(" Humedo, no regar");
       if (Valor > 700)
         Serial.println(" Encharcado");
-      delay(1000);
+      delay(60000);
   
   client.add("sensor", Valor); //Insert your variable Labels and the value to be sent
   client.ubidotsPublish("jardin");
