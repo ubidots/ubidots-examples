@@ -53,7 +53,7 @@ void loop() {
   readCm();
   delay(5000);
   String value = String (distancia);
-  client.add("volumen", distancia); //Insert your variable Labels and the value to be sent
+  client.add("distancia", distancia); //Insert your variable Labels and the value to be sent
   client.ubidotsPublish("reserva");
   client.loop();
   }
